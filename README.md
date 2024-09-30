@@ -1,0 +1,2 @@
+# Snake
+Small CLI game
