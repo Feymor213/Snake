@@ -1,8 +1,8 @@
 # Snake Game - CLI Game Project
 
-* **Version:** 2
+* **Version:** 3
 * **Author:** Bohdan Morus
-* **Date:** 30.9.2024
+* **Date:** 7.10.2024
 
 ## Contents
 #### 1. Document history
@@ -11,19 +11,28 @@
 
 ## Document History
 | Version | Author | Comment |
-| --- | :----: | :----: |
+| --- | :----: | :---- |
 | 1 | Bohdan Morus | First version of the SRS |
 | 2 | Bohdan Morus | Fixed a typo |
+| 3 | Bohdan Morus | Prioritized the requirements, added non-functional |
 
 ## Solution Goals
 * Create a free CLI game based on the popular game "Snake".
 * Create a "go to solution" for wasting the time while waiting or procrastinating.
 * Widen the amount of entertainment available though CLI (Command Line Interface).
 
-## Functional Eequirements
-* Intuitive controls - only 4 buttons for directions.
-* Close visual resemblance with the original "Snake".
-* Same, simple goal as the original "Snake" - collecting food items on the gameboard.
-* Different shapes of the gameboard.
-* Score system.
-* Persistence of the score and other user information locally.
+## Functional Requirements - in order of priority
+1. Intuitive controls - only 4 buttons for directions.
+2. Same, simple goal as the original "Snake" - collecting food items on the gameboard.
+3. Score system.
+4. Close visual resemblance with the original "Snake".
+5. Persistence of the score and other user information locally.
+6. Different shapes of the gameboard.
+
+## Non-functional requirements - in order of priority
+1. CLI - application does not need a full GUI. Can run on remote servers with only terminal access.
+2. Wide range of supported platforms with .NET framework.
+3. Local backing up of the saves - ensures data integrity when program crashes.
+4. Deployed self-contained for linux and widows, pre-compiled for .net environments and as a source code repository.
+5. Deployment as docker container and tarballs.
+6. Deployment via MSI package for windows.
