@@ -1,6 +1,6 @@
 # Snake Game - CLI Game Project
 
-* **Version:** 3
+* **Version:** 2
 * **Author:** Bohdan Morus
 * **Date:** 7.10.2024
 
@@ -8,13 +8,15 @@
 #### 1. Document history
 #### 2. Solution goals
 #### 3. Functional requirements
+#### 4. Non-functional requirements
 
 ## Document History
 | Version | Author | Comment |
 | --- | :----: | :---- |
 | 1 | Bohdan Morus | First version of the SRS |
-| 2 | Bohdan Morus | Fixed a typo |
-| 3 | Bohdan Morus | Prioritized the requirements, added non-functional |
+| 1.1 | Bohdan Morus | Fixed a typo |
+| 2 | Bohdan Morus | Prioritized the requirements, added non-functional |
+| 2.2 | Bohdan Morus | Correction - added "non-functional requirements" to contents |
 
 ## Solution Goals
 * Create a free CLI game based on the popular game "Snake".
