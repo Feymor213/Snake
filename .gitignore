@@ -1,0 +1,10 @@
+bin/
+obj/
+
+*.pdb
+*.cache
+*.dll
+*.exe
+
+*.txt
+!layouts/*txt
