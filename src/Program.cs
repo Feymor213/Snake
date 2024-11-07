@@ -1,10 +1,4 @@
-﻿using System;
-using System.Data.Common;
-using System.Net.Cache;
-using System.Runtime.ExceptionServices;
-using System.Threading;
-
-class Program
+﻿class Program
 {
     static void Main()
     {
