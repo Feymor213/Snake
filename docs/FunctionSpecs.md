@@ -1,8 +1,8 @@
 # Functional specifications
 
-* **Version:** 2
+* **Version:** 3
 * **Author:** Bohdan Morus
-* **Date:** 21.10.2024
+* **Date:** 8.11.2024
 
 ## Contents
 #### 1. Document history
@@ -18,6 +18,7 @@
 | --- | :----: | :---- |
 | 1 | Bohdan Morus | First version of the Document |
 | 2 | Bohdan Morus | Added the gameplay, levels and persistence description |
+| 3 | Bohdan Morus | Tweaked visual diagrams. Removed layous "square" and "edgeless" |
 
 ## Controls
 
@@ -50,8 +51,10 @@ The maximum score achieved by the user on the selected level layout is displayed
 
 #### Example
 ```text
+HIGH SCORE: 69420
+SCORE: 679
 ████████████████████████████████████████████████████████████████████████████████████
-█  MAX SCORE: 69420                                                                █
+█                                                                                  █
 █                                                                                  █
 █                                                                                  █
 █                                                                                  █
@@ -69,8 +72,8 @@ The maximum score achieved by the user on the selected level layout is displayed
 
 ## Character and asset design
 ```text
-Snake going right: - - - - > 
-Snake going left:  < - - - - 
+Snake going right: ----> 
+Snake going left:  <---- 
 
 Up & down:
 | ^
@@ -79,13 +82,13 @@ v |
 
 Turns from left to down, down to right, right to up, up to left respectfully:
 
-- - |        - - >          ^                |
-    |        |              |                |
-    v        |              | - -        < - -
+--|        -->            ^            |
+  |        |              |            |
+  v        |              |--        <--
 
 Food: *
 
-Snake approaching the food:  - - - - > *
+Snake approaching the food:  ----> *
 
 Edge of arena: ██████
 
@@ -97,19 +100,19 @@ After pressing "Start" the gameplay starts. The user interface consists of two t
 
 #### Example
 ```text
-MAX SCORE: 69420
-CURRENT SCORE: 847
+HIGH SCORE: 69420
+SCORE: 679
 ████████████████████████████████████████████████████████████████████████████████████
 █                                                                                  █
 █                                                                                  █
 █                                                                                  █
-█                                                           *                      █
+█                                                            *                     █
 █                                                                                  █
 █                                                                                  █
 █                                                            ^                     █
 █                                                            |                     █
 █                                                            |                     █
-█                                                    - - - - |                     █
+█                                                        ----|                     █
 █                                                                                  █
 █                                                                                  █
 ████████████████████████████████████████████████████████████████████████████████████
@@ -120,8 +123,8 @@ CURRENT SCORE: 847
 When the snake hits its owh body or the edge of the board - the game stops. Current and maximum score labels remain, the snake sprite dissapears and the text "Game over" shows up in the middle of the viewport. After pressing the ***Return*** key the user is sent back to the main menu.
 
 ```text
-MAX SCORE: 69420
-CURRENT SCORE: 847
+HIGH SCORE: 69420
+SCORE: 679
 ████████████████████████████████████████████████████████████████████████████████████
 █                                                                                  █
 █                                                                                  █
@@ -172,26 +175,6 @@ PANTS:
 █         █         █         █
 █         █         █         █
 ███████████         ███████████
-
-SQUARE:
-██████████████████████
-█                    █
-█                    █
-█                    █
-█                    █
-█                    █
-█                    █
-██████████████████████
-
-EDGELESS (proposal). If player hits the edge they don't die. Instead they are teleported to the opposite side of the board.
-------------------------------
-|                            |
-|                            |
-|                            |
-|                            |
-|                            |
-|                            |
-------------------------------
 
 ```
 

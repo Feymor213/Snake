@@ -1,10 +1,11 @@
 bin/
 obj/
+.vscode/
 
 *.pdb
 *.cache
 *.dll
 *.exe
 
-*.txt
-!layouts/*txt
+*.txt*
+!**/layouts/*txt
