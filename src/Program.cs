@@ -384,6 +384,7 @@ public class Menu
                                 engineState.layoutFileName = levels[levelIndex].FileName;
                                 break;
                             case 3:
+                                Console.Clear();
                                 Environment.Exit(0);
                                 break;
                         }
